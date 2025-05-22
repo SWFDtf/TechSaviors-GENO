@@ -14,11 +14,10 @@ if (menuToggle) {
 // Age selection functionality
 function selectAge(ageGroup) {
     // Hide age selection and show main content
-    document.getElementById('age-selection').classList.remove('active');
-    document.getElementById('age-selection').classList.add('hidden');
-    document.getElementById('main-content').classList.remove('hidden');
-    document.getElementById('main-content').classList.add('active');
-    
+    document.getElementById('age-selection').style.display('none');
+    document.getElementById('age-selection').style.display('block');
+
+
     // Apply theme based on age group
     document.body.className = ''; // Reset any existing theme
     document.body.classList.add(`theme-${ageGroup}`);
