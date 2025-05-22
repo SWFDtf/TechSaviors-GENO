@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSaviours GENO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-laptop"></i>
+                <h1>TechSaviours GENO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <button class="help-btn" onclick="scrollToSection('contact')">Hilfe bekommen</button>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Age Selection Section -->
+    <section id="age-selection" class="active">
+        <div class="container">
+            <div class="welcome-text">
+                <h2>Willkommen bei TechSaviours GENO!</h2>
+                <p>Wir helfen bei der Reparatur von Computern, Laptops und iPads am Gymnasium Essen Nord-Ost. Bitte wähle dein Alter aus, damit wir dir die passenden Informationen anzeigen können:</p>
+            </div>
+            <div class="age-options">
+                <div class="age-card" onclick="selectAge('9-11')">
+                    <div class="age-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>9-11 Jahre</h3>
+                    <button class="age-btn">Das bin ich!</button>
+                </div>
+                <div class="age-card" onclick="selectAge('12-13')">
+                    <div class="age-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>12-13 Jahre</h3>
+                    <button class="age-btn">Das bin ich!</button>
+                </div>
+                <div class="age-card" onclick="selectAge('14-18')">
+                    <div class="age-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>14-18 Jahre</h3>
+                    <button class="age-btn">Das bin ich!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content (Hidden initially) -->
+    <main id="main-content" class="hidden">
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <h2 id="hero-title">Technik-Hilfe für Kinder!</h2>
+                <p id="hero-text">Wir sind hier, um deine Computerprobleme zu lösen und dein iPad wieder wie neu zu machen! Unsere freundlichen Technik-Helfer am Gymnasium Essen Nord-Ost können alle möglichen technischen Probleme lösen.</p>
+                <div class="hero-buttons">
+                    <button class="primary-btn" onclick="scrollToSection('services')">Schau, wie wir helfen können</button>
+                    <button class="secondary-btn" onclick="scrollToSection('contact')">Finde uns</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="services-title">Was wir reparieren können</h2>
+                    <p id="services-subtitle">Hier sind die Möglichkeiten, wie wir deine Technik besser machen können!</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Computer Help -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 id="computer-title">Computer & Laptop Hilfe</h3>
+                        <p id="computer-text">Ist dein Computer langsam oder funktioniert nicht richtig? Wir können ihn schneller machen und alle Probleme beheben!</p>
+                    </div>
+
+                    <!-- iPad Help -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <h3 id="ipad-title">iPad Reparaturen</h3>
+                        <p id="ipad-text">Hast du Probleme mit deinem iPad? Wir können helfen, es zu reparieren und wieder wie neu zu machen!</p>
+                    </div>
+
+                    <!-- Screen Protector -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 id="screen-title">Neue Displayschutzfolien</h3>
+                        <p id="screen-text">Ist deine iPad-Displayschutzfolie zerkratzt oder löst sich ab? Wir können eine neue anbringen, um dein iPad zu schützen!</p>
+                    </div>
+
+                    <!-- Software Help -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3 id="software-title">App & Programm Hilfe</h3>
+                        <p id="software-text">Hast du Probleme mit Apps oder Programmen? Wir können dir helfen, sie wieder zum Laufen zu bringen!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2 id="about-title">Wer sind wir?</h2>
+                        <p id="about-text-1">Wir sind ein freundliches Team am Gymnasium Essen Nord-Ost, das gerne Kindern bei ihren technischen Problemen hilft! Wir wissen, dass Computer und iPads manchmal schwierig sein können, und wir sind hier, um sie für dich besser zu machen.</p>
+                        <p id="about-text-2">Egal ob dein Computer langsam ist, dein iPad Probleme hat oder du eine neue Displayschutzfolie brauchst, wir sind hier, um zu helfen!</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://placehold.co/400x300" alt="TechSaviours Team" id="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 id="contact-title">Hier findest du uns!</h2>
+                        <p id="contact-text">Wir sind am Gymnasium Essen Nord-Ost. Frag einfach einen Lehrer, wo du das TechSaviours-Team findest!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span class="contact-label">Standort:</span>
+                                <span>Gymnasium Essen Nord-Ost (GENO)</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Öffnungszeiten:</span>
+                                <span id="contact-hours">Schultage während der Mittagspause</span>
+                            </div>
+                        </div>
+                        <button class="primary-btn" id="contact-btn">Frag einen Lehrer um Hilfe</button>
+                    </div>
+                    <div class="contact-map">
+                        <img src="https://placehold.co/400x250" alt="Schulplan" id="map-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-laptop"></i>
+                    <h2>TechSaviours GENO</h2>
+                </div>
+                <p class="footer-text">Am Gymnasium Essen Nord-Ost • Wir helfen bei allen technischen Problemen</p>
+                <div class="footer-links">
+                    <a href="#services">Leistungen</a>
+                    <a href="#about">Über uns</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © <span id="current-year"></span> TechSaviours GENO. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
