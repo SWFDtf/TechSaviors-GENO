@@ -14,8 +14,8 @@ if (menuToggle) {
 // Age selection functionality
 function selectAge(ageGroup) {
     // Hide age selection and show main content
-    document.getElementById('age-selection').style.display('none');
-    document.getElementById('ain-content').style.display('block');
+    document.getElementById('age-selection').style.display = 'none';
+    document.getElementById('ain-content').style.display = 'block';
 
 
     // Apply theme based on age group
