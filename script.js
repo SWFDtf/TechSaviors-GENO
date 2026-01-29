@@ -10,7 +10,13 @@ if (menuToggle) {
         nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
     });
 }
-
+if (localStorage.getItem('cookie') == 1) {
+    selectAge('9-11');
+} else if (localStorage.getItem('cookie') == 2) {
+    selectAge('12-13');
+} else if (localStorage.getItem('cookie') == 3) {
+    selectAge('14-18');
+}
 // Age selection functionality
 function selectAge(ageGroup) {
     // Hide age selection and show main content
@@ -65,6 +71,13 @@ function updateContent(ageGroup) {
     // Add animations based on age group
     if (ageGroup === '9-11') {
         addAnimationsForKids();
+        localStorage.setItem('cookie', 1);
+    } else if (ageGroup === '12-13') {
+        addAnimationsForKids();
+        localStorage.setItem('cookie', 2);
+    } else if (ageGroup === '14-18') {
+        addAnimationsForKids();
+        localStorage.setItem('cookie', 3);
     }
 }
 
