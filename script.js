@@ -173,7 +173,7 @@ function getContentForAgeGroup(ageGroup) {
         },
         '14-18': {
             hero: {
-                title: 'Technische Unterstützung für Jugendliche',
+                title: 'Technische Unterstützung für Jugendliche und Erwachsene',
                 text: 'TechSaviours GENO bietet umfassende technische Unterstützung für alle deine Geräte. Unser Team am Gymnasium Essen Nord-Ost ist spezialisiert auf die Fehlersuche und Lösung von Hardware- und Softwareproblemen für PCs, Laptops und iPads.'
             },
             services: {
