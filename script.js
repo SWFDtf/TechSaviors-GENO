@@ -24,6 +24,7 @@ function selectAge(ageGroup) {
     document.getElementById('main-content').style.display = 'block';
 
 
+    
     // Apply theme based on age group
     document.body.className = ''; // Reset any existing theme
     document.body.classList.add(`theme-${ageGroup}`);
